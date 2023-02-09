@@ -32,7 +32,10 @@
     text-align: center;
     background-color: antiquewhite;
     cursor: pointer;
-    box-shadow: 2px 2px 2px red;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(224, 224, 224);
+    font-weight: bold;
 
     &:active {
       background-color: aliceblue;
