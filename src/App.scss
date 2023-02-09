@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+
+  h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+    color: antiquewhite;
+  }
+
+  img {
+    width: 250px;
+    margin: 0 1rem;
+    animation: app-logo-spin infinite 20s linear;
+    pointer-events: none;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: bisque;
+  }
+
+  button {
+    width: 30px;
+    padding: 0.1rem 0.4rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px red;
+
+    &:active {
+      background-color: aliceblue;
+      box-shadow: none;
+      transform: translate(2px, 2px);
+    }
+  }
+
+  .notification {
+    width: auto;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

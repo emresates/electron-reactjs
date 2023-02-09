@@ -3,10 +3,15 @@ const path = require('path');
 
 const isDev = !app.isPackaged;
 
+//! FOR
+//! [13516:0209/100401.107:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is
+app.disableHardwareAcceleration();
+
 function createWindow() {
   const win = new BrowserWindow({
-    width: 650,
-    height: 400,
+    title: 'Electron',
+    width: 750,
+    height: 600,
     backgroundColor: 'white',
     webPreferences: {
       nodeIntegration: false,
